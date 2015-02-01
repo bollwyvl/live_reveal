@@ -2,3 +2,4 @@
 *.egg-info/
 live_reveal/static/livereveal/lib/
 __pycache__
+*.pyc
