@@ -10,14 +10,14 @@ def setup_assets(profile='default', verbose=False):
 
     print("Install the livereveal nbextension...")
 
-    install_nbextension(livereveal_dir, verbose=verbose, symlink=True)
+    install_nbextension(livereveal_dir, verbose=verbose, symlink=True, user=True)
 
     # Enable the extension in the given profile.
     profile_dir = locate_profile(profile)
     custom_js = os.path.join(profile_dir, 'static', 'custom', 'custom.js')
 
     print("Requiring livereveal at startup {} ...".format(custom_js))
-    with file(custom_js, "r+") as f:
+    with open(custom_js, "r+") as f:
         if custom_js_entry in f.read():
             print('... custom.js entry already exists')
         else:
