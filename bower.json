@@ -1,0 +1,31 @@
+{
+  "name": "livereveal",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bollwyvl/live_reveal",
+  "authors": [
+    "Damián Avila"
+  ],
+  "description": "a presentation-based interface for the IPython/Jupyter notebook",
+  "main": "main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "ipython",
+    "nbextension",
+    "jupyter"
+  ],
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "live_reveal/static/livereveal/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs-text": "~2.0.13",
+    "reveal.js": "~2.6.2"
+  }
+}
